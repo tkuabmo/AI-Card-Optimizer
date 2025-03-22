@@ -6,7 +6,7 @@ Final Project for the Building AI Course
 
 Final project for the Building AI course
 
-# Summary
+"## Summary"
 
 The AI-Based MSAG Card Failure Detector is a predictive maintenance solution designed to enhance the reliability and operational efficiency of telecom operators and ISPs. The solution leverages artificial intelligence (AI) and machine learning (ML) to analyze network performance counters and service faults in MSAG (Multi-Service Access Gateway) cards. By identifying early warning signs of potential failures, the system enables proactive maintenance, reducing service disruptions, optimizing resource utilization, and improving customer experience.
 
