@@ -6,15 +6,15 @@ Final Project for the Building AI Course
 
 Final project for the Building AI course
 
-"## Summary"
+## Summary
 
 The AI-Based MSAG Card Failure Detector is a predictive maintenance solution designed to enhance the reliability and operational efficiency of telecom operators and ISPs. The solution leverages artificial intelligence (AI) and machine learning (ML) to analyze network performance counters and service faults in MSAG (Multi-Service Access Gateway) cards. By identifying early warning signs of potential failures, the system enables proactive maintenance, reducing service disruptions, optimizing resource utilization, and improving customer experience.
 
-# Background
+## Background
 
 MSAGs serve as critical aggregation points for broadband and voice services in fixed-line networks, managing data and voice traffic between subscriber endpoints and core networks. These devices operate in high-load environments, often experiencing performance degradation due to aging hardware, fluctuating environmental conditions, and network congestion. Currently, most telecom operators rely on reactive fault management strategies, where failures are detected only after they impact end users. This approach leads to increased downtime, escalated operational costs, and potential regulatory penalties for service-level agreement (SLA) violations. By implementing an AI-driven failure detection system, operators can transition from reactive to predictive maintenance, minimizing service disruptions, optimizing workforce deployment, and enhancing network resilience.
 
-# How is it Used?
+## How is it Used?
 
 The AI-Based MSAG Card Failure Detector continuously monitors network data streams, analyzing historical and real-time telemetry data to predict potential failures. It follows a structured workflow:
 
@@ -38,19 +38,19 @@ Data Sources
 
 • Network Management Systems (NMS): Provides real-time monitoring data and alarm logs. • Simple Network Management Protocol (SNMP) Traps: Delivers alerts on device health status. • Operational Support Systems (OSS) Logs: Historical service tickets and troubleshooting logs. • Machine Sensor Data: Temperature, humidity, and voltage logs from environmental sensors.
 
-# AI Techniques Used
+## AI Techniques Used
 
 • Feature Engineering: Extracting key performance indicators (KPIs) from raw data for model training. • Classification Algorithms: Decision Trees, Random Forest, and XGBoost for failure classification. • Anomaly Detection Models: Autoencoders and k-Means clustering for unsupervised fault detection. • Time-Series Forecasting: LSTMs and Prophet for trend-based failure predictions. • Natural Language Processing (NLP): Analyzing service logs for hidden failure patterns. The AI engine is deployed in a hybrid cloud-edge architecture, ensuring real-time processing with minimal latency.
 
-# Challenges
+## Challenges
 
 Several technical and operational challenges need to be addressed: Data Quality & Labeling • Ensuring accurate failure labeling in historical logs for supervised learning models. • Addressing missing or inconsistent network telemetry data. False Positives & False Negatives • Minimizing incorrect alerts through hyperparameter tuning and ensemble modeling. • Incorporating reinforcement learning techniques to improve model accuracy over time. Integration with Legacy Systems • Many telecom operators still rely on legacy MSAG equipment without standardized APIs. • Custom-built middleware may be required to interface AI with older network elements. Scalability & Real-Time Processing • Processing large-scale network telemetry data in real-time requires efficient distributed computing. • Implementation of stream processing frameworks like Apache Kafka and Apache Flink for high-speed data ingestion.
 
-# What Next?
+## What Next?
 
 Future enhancements for the AI-Based MSAG Card Failure Detector include: Advanced Root Cause Analysis (RCA) • Using Explainable AI (XAI) techniques (e.g., SHAP values) to provide deeper insights into failure causes. • Correlating MSAG faults with upstream and downstream network elements for end-to-end visibility. Automated Remediation & Self-Healing Networks • AI-Powered Auto-Healing: Enabling MSAGs to self-correct minor issues through automated software patches. • Closed-Loop Automation: Integrating AI with Software-Defined Networking (SDN) controllers for network reconfiguration. Integration with Digital Twins • Simulating MSAG network behavior using digital twins, allowing operators to test AI-based failure scenarios before deployment. Cloud-Based AI Processing • Implementing AI models on cloud-native platforms (AWS SageMaker, Google Vertex AI) for global scalability. • Using federated learning to share AI insights across different telecom networks without compromising data privacy.
 
-# Acknowledgments
+## Acknowledgments
 
 This project is inspired by existing telecom predictive maintenance frameworks and AI-driven fault management systems. It aims to bridge the gap between traditional network monitoring tools and intelligent, self-learning predictive analytics for proactive telecom operations.
 
